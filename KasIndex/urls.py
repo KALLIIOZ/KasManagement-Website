@@ -8,4 +8,4 @@ urlpatterns=[
     path('', views.index_view, name='index'),
     path('actor/<str:nombre>/', views.actor_detail, name='actor_perfil'),
     path('contact/', views.contact, name='contact_us')
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-e#j!zsl9ew4h+wz224eu8$poa891u+iwti0tm-y8sm0g0ugk7x
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ["kasmgt.com"]
+
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -75,15 +76,14 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-
 DATABASES = {
-    "default": {
+        "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "mydatabase",
         "USER": "postgres",
         "PASSWORD": "fortaleza",
         "HOST": "database-1.ct8ysg862o0i.us-east-2.rds.amazonaws.com",
-        "PORT": "5432"
+        "PORT": "5432",
     }
 }
 
@@ -122,6 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 

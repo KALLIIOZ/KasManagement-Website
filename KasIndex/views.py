@@ -40,7 +40,7 @@ def actor_detail(request, nombre):
         'social': social,
     }
 
-    return render(request, 'Kasindex/actor.html', context)
+    return render(request, 'KasIndex/actor.html', context)
 
 
 
@@ -52,13 +52,13 @@ def contact(request):
         actor = request.POST.get('actor')
 
         # Email content
-        subject = f'New Contact Request for {actor}'
+        subject = f'Nueva Peticion para {actor}'
         message = f'''
         Contact Details:
-        Name: {name}
-        Phone: {phone}
-        Email: {email}
-        Interested in Actor: {actor}
+        Nombre: {name}
+        Telefono: {phone}
+        Correo: {email}
+        Interesado en: {actor}
         '''
         
         try:
@@ -71,9 +71,9 @@ def contact(request):
                 fail_silently=False,
             )
             messages.success(request, '¡Mensaje enviado exitosamente!')
-            return redirect('contact')
+            return redirect('contact_us')
         except Exception as e:
             messages.error(request, 'Hubo un error al enviar el mensaje. Por favor, intente nuevamente.')
-            return redirect('contact')
+            return redirect('contact_us')
 
     return render(request, 'KasIndex/contact_us.html')
