@@ -24,7 +24,7 @@ Kas Management es una aplicación backend construida con Django que permite gest
 ## ⚙️ Instalación y configuración
 
 ### 1️⃣ Clonar el repositorio
-
+```bash
 git clone https://github.com/tuusuario/kas-management.git
 cd kas-management
 
