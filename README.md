@@ -1,69 +1,39 @@
 # 🚀 Kas Management
 
-Sistema de gestión desarrollado con **Django**, diseñado para administrar información de manera estructurada, escalable y segura. El proyecto está enfocado en buenas prácticas de arquitectura backend y preparado para evolucionar hacia una arquitectura de microservicios.
+A management system developed with Django, designed to handle information in a structured, scalable, and secure way. The project follows backend best practices and is prepared to evolve into a microservices architecture.
 
----
+## 📌 Description
 
-## 📌 Descripción
+Kas Management is a backend application built with Django that allows managing system entities through a robust and well-organized API. The project is designed to scale, integrate with mobile applications or modern frontends, and be deployed in cloud environments such as AWS.
 
-Kas Management es una aplicación backend construida con Django que permite gestionar entidades del sistema mediante una API robusta y organizada. El proyecto está pensado para escalar, integrarse con aplicaciones móviles o frontend moderno, y desplegarse en entornos cloud como AWS.
+## 🏗 Architecture
 
----
-
-## 🏗 Arquitectura
-
-- **Framework:** Django  
-- **Base de datos:** PostgreSQL  
-- **Arquitectura:** Monolito modular (preparado para migración a microservicios)  
-- **API:** Django REST Framework  
-- **Despliegue:** AWS EC2 (planeado)  
+- **Framework:** Django 
+- **Base de datos:** PostgreSQL 
+- **Arquitectura:** Monolito modular (preparado para migración a microservicios) 
+- **API:** Django REST Framework 
+- **Despliegue:** AWS EC2 (planeado) 
 - **Base de datos remota:** AWS RDS (planeado)
 
----
-
-## ⚙️ Instalación y configuración
-
-### 1️⃣ Clonar el repositorio
+## ⚙️ Installation and Setup
+### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/tuusuario/kas-management.git
-cd kas-management
-
-### 2️⃣ Crear entorno virtual
-```bash
-git clone https://github.com/tuusuario/kas-management.git
-cd kas-management
-
-### 2️⃣ Crear entorno virtual
-```bash
-git clone https://github.com/tuusuario/kas-management.git
-cd kas-management
-
-### 2️⃣ Crear entorno virtual
-```bash
-git clone https://github.com/tuusuario/kas-management.git
+git clone https://github.com/yourusername/kas-management.git
 cd kas-management
 ```
-
-### 2️⃣ Crear entorno virtual
-```bash
-git clone https://github.com/tuusuario/kas-management.git
-cd kas-management
-```
-
-### 2️⃣ Crear entorno virtual
+### 2️⃣ Create a virtual environment
 ```bash
 python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### 3️⃣ Instalar dependencias
+### 3️⃣ Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Configurar variables de entorno
-Crea un archivo .env con:
-
+### 4️⃣ Configure environment variables
+Create a .env file with:
 ```bash
 DEBUG=True
 SECRET_KEY=your_secret_key
@@ -73,20 +43,13 @@ DATABASE_PASSWORD=your_password
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
 ```
-
-### 5️⃣ Aplicar migraciones
+### 5️⃣ Apply migrations
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 5️⃣ Aplicar migraciones
-```bash
-python manage.py makemigrations
-python manage.py migrate
-```
-
-### 6️⃣ Ejecutar el servidor
+### 6️⃣ Run the server
 ```bash
 python manage.py runserver
 ```
