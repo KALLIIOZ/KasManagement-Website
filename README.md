@@ -29,15 +29,42 @@ git clone https://github.com/tuusuario/kas-management.git
 cd kas-management
 
 ### 2️⃣ Crear entorno virtual
+```bash
+git clone https://github.com/tuusuario/kas-management.git
+cd kas-management
+
+### 2️⃣ Crear entorno virtual
+```bash
+git clone https://github.com/tuusuario/kas-management.git
+cd kas-management
+
+### 2️⃣ Crear entorno virtual
+```bash
+git clone https://github.com/tuusuario/kas-management.git
+cd kas-management
+```
+
+### 2️⃣ Crear entorno virtual
+```bash
+git clone https://github.com/tuusuario/kas-management.git
+cd kas-management
+```
+
+### 2️⃣ Crear entorno virtual
+```bash
 python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
+```
 
 ### 3️⃣ Instalar dependencias
+```bash
 pip install -r requirements.txt
+```
 
 ### 4️⃣ Configurar variables de entorno
 Crea un archivo .env con:
 
+```bash
 DEBUG=True
 SECRET_KEY=your_secret_key
 DATABASE_NAME=kas_db
@@ -45,10 +72,21 @@ DATABASE_USER=postgres
 DATABASE_PASSWORD=your_password
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
+```
 
 ### 5️⃣ Aplicar migraciones
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
+
+### 5️⃣ Aplicar migraciones
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
 
 ### 6️⃣ Ejecutar el servidor
+```bash
 python manage.py runserver
+```
