@@ -25,18 +25,17 @@ Kas Management es una aplicación backend construida con Django que permite gest
 
 ### 1️⃣ Clonar el repositorio
 
-```bash
 git clone https://github.com/tuusuario/kas-management.git
 cd kas-management
 
-2️⃣ Crear entorno virtual
+### 2️⃣ Crear entorno virtual
 python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 
-3️⃣ Instalar dependencias
+### 3️⃣ Instalar dependencias
 pip install -r requirements.txt
 
-4️⃣ Configurar variables de entorno
+### 4️⃣ Configurar variables de entorno
 Crea un archivo .env con:
 
 DEBUG=True
@@ -47,9 +46,9 @@ DATABASE_PASSWORD=your_password
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
 
-5️⃣ Aplicar migraciones
+### 5️⃣ Aplicar migraciones
 python manage.py makemigrations
 python manage.py migrate
 
-6️⃣ Ejecutar el servidor
+### 6️⃣ Ejecutar el servidor
 python manage.py runserver
